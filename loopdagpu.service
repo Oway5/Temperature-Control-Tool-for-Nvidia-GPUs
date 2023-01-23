@@ -1,0 +1,11 @@
+[Unit]
+Description=loop temp
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/oways/Desktop/startthing.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
